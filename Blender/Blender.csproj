@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Khaled Sameer</Authors>
+    <Company />
+    <Product>Blender Framwork</Product>
+    <Copyright>Khaled Sameer</Copyright>
+    <PackageProjectUrl>https://khaled-smq.com</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp1.1\Blender.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
